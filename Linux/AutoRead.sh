@@ -11,6 +11,6 @@ do
     test $? -ne 0 && exit
     ran=$(($RANDOM%10+10))
     sleep $ran
-    total=$(($total+8))
+    total=$(($total+$ran))
 done
 echo "Finished!"
